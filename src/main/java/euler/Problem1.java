@@ -10,11 +10,11 @@ public class Problem1 {
 				answer=answer+i;
 			}
 		}
-		return answer;	
+		return answer;
 	}
 
 	public static void main(String[] args) {
-		System.out.println(addMultiples());
+		System.out.println("Problem 1: " + addMultiples());
 	}
 
 }

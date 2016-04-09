@@ -1,8 +1,12 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'application'
+apply plugin: 'pmd'
+//apply plugin: 'checkstyle'
 
 sourceCompatibility = 1.7
 version = '0.1'
+mainClassName = "euler.Main"
 
 jar {
     manifest {
