@@ -3,3 +3,9 @@
 
 # Project Euler
 My attempts at [Project Euler](https://projecteuler.net/) problems!
+
+| Solved |
+| ------ |
+| [Problem 1](https://projecteuler.net/problem=1) |
+| [Problem 2](https://projecteuler.net/problem=2) |
+| [Problem 6](https://projecteuler.net/problem=6) |
