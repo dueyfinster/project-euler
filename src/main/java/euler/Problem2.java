@@ -4,28 +4,29 @@ import java.math.BigInteger;
 
 public class Problem2 {
 	
-	public static int evenFibonacci(int limit){
+	public static BigInteger evenFibonacci(){
 		BigInteger answer = BigInteger.ZERO;
 		BigInteger temp = BigInteger.ZERO;
-		BigInteger prev = BigInteger.ONE;
-		BigInteger next = BigInteger.valueOf(2);
+		BigInteger next = BigInteger.valueOf(1);
+		BigInteger limit = new BigInteger("4000000");
 		
-		for(int i=0; i<10; i++){
-			temp=prev.add(next);
-			prev=next;
+		for(BigInteger i = BigInteger.ONE; temp.compareTo(limit) < 0;){
+			//System.out.println(temp +" "+ i +" "+ next);
+			temp=i.add(next);
+			i=next;
 			next=temp;
-			if(temp.intValue()%2==0){
-				System.out.println(temp);
-				answer=temp;
+			if(temp.mod(BigInteger.valueOf(2)) == BigInteger.ZERO){
+				answer = answer.add(temp);
+				//System.out.println(answer);
 			}
 		}
 		
-		return answer.intValue();	
+		return answer;	
 	}
 	
 	
 	public static void main(String[] args) {
-		System.out.println(evenFibonacci(0));
+		System.out.println("Problem 2: " + evenFibonacci());
 	}
 
 }
